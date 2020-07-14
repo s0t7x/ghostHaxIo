@@ -75,9 +75,15 @@
         </div>
       </section>
 
-      <div style="position:absolute; right: 0px;  -ms-transform: translateY(-100%); transform: translateY(-100%);"><iframe src="https://discordapp.com/widget?id=336966442828431360&theme=dark?username=gitHubUser" width="350" height="500" allowtransparency="true" frameborder="0"></iframe></div>
+      <div class="disco" style="position:absolute; bottom: 0px; right: 0px; -ms-transform: translateY(-100%); transform: translateY(-100%);  -ms-transform: translateX(-100%); transform: translateX(-100%);"><iframe src="https://discordapp.com/widget?id=336966442828431360&theme=dark?username=gitHubUser" width="350" height="500" allowtransparency="true" frameborder="0"></iframe></div>
 
       <style type="text/css">
+      @media screen and (max-width: 1024px) {
+        .disco {
+          display: hidden !important;
+        }
+      }
+
         .discoBtn {
           -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
           -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -122,8 +128,8 @@
           top:1px;
         }</style>
 
-      <footer>
-        <div style="position: absolute; left: 50%; -ms-transform: translateX(-50%); transform: translateX(-50%);"><a href="https://discord.gg/5Ahtqae" class="discoBtn">visit</a></div>
+      <footer style="position: absolute; left: 50%; -ms-transform: translateX(-50%); transform: translateX(-50%);">
+        <a href="https://discord.gg/5Ahtqae" class="discoBtn">visit</a>
       </footer>
     </div>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
