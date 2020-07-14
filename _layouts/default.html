@@ -20,7 +20,9 @@
       </header>
       <section>
       <div markdown="1"> 
+	{% include_relative README.md | markdownify %}
 
+<!--
       {% capture valorDisco %}{% include_relative valorDisco.md %}{% endcapture %}
       {% capture ed420 %}{% include_relative ed420.md %}{% endcapture %}
       {% capture 4rch4ngel %}{% include_relative 4rch4ngel.md %}{% endcapture %}
@@ -65,7 +67,7 @@
         <hr>
       <a name="dotGhost"></a>
       {{ dotGhost | markdownify }}
-
+-->
         </div>
       </section>
       <footer>
