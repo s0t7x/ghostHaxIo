@@ -16,7 +16,7 @@
       <header>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
         
-        {{ content }}
+        {{ content | markdownify }}
                 
       </header>
       <section>
