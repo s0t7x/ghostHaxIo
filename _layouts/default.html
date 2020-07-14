@@ -12,12 +12,12 @@
     <![endif]-->
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" markdown="1">
       <header>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
         
-        {{ content | markdownify }}
-                
+        {% capture readme %}{% include_relative readme.md %}{% endcapture %}
+        {{ readme | markdownify }}
       </header>
       <section>
       <div markdown="1"> 
