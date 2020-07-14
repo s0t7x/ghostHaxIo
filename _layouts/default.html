@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "de-DE" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>GhostHax</title>
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        
+        {{ content }}
+                
+      </header>
+      <section>
+      <div markdown="1"> 
+        
+      {% capture valorDisco %}{% include_relative valorDisco.md %}{% endcapture %}
+      {% capture ed420 %}{% include_relative ed420.md %}{% endcapture %}
+      {% capture 4rch4ngel %}{% include_relative 4rch4ngel.md %}{% endcapture %}
+      {% capture omega %}{% include_relative omega.md %}{% endcapture %}
+      {% capture fortyyy %}{% include_relative fortyyy.md %}{% endcapture %}
+      {% capture MrFister %}{% include_relative MrFister.md %}{% endcapture %}
+      {% capture dotApex %}{% include_relative dotApex.md %}{% endcapture %}
+      {% capture dotGhost64Linux %}{% include_relative dotGhost64Linux.md %}{% endcapture %}
+      {% capture dotGhost %}{% include_relative dotGhost.md %}{% endcapture %}
+ 
+      <a name="valorDisco"></a>
+      {{ valorDisco | markdownify }}
+        <br/>
+        <hr>
+      <a name="ed420"></a>
+      {{ ed420 | markdownify }}
+        <br/>
+        <hr>
+      <a name="4rch4ngel"></a>
+      {{ 4rch4ngel | markdownify }}
+        <br/>
+        <hr>
+      <a name="omega"></a>
+      {{ omega | markdownify }}
+        <br/>
+        <hr>
+      <a name="fortyyy"></a>
+      {{ fortyyy | markdownify }}
+        <br/>
+        <hr>
+      <a name="MrFister"></a>
+      {{ MrFister | markdownify }}
+        <br/>
+        <hr>
+      <a name="dotApex"></a>
+      {{ dotApex | markdownify }}
+        <br/>
+        <hr>
+      <a name="dotGhost64Linux"></a>
+      {{ dotGhost64Linux | markdownify }}
+        <br/>
+        <hr>
+      <a name="dotGhost"></a>
+      {{ dotGhost | markdownify }}
+        <br/>
+        <hr>
+
+        </div>
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; <a href="https://github.com/s0t7x/">s0t7x</a></small></p>
+      </footer>
+    </div>
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+
+
+  </body>
+</html>
