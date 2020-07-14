@@ -16,12 +16,11 @@
       <header>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
         
-        {% capture readme %}{% include_relative README.md %}{% endcapture %}
-        {{ readme | markdownify }}
+
       </header>
       <section>
       <div markdown="1"> 
-        
+      {% capture readme %}{% include_relative README.md %}{% endcapture %}
       {% capture valorDisco %}{% include_relative valorDisco.md %}{% endcapture %}
       {% capture ed420 %}{% include_relative ed420.md %}{% endcapture %}
       {% capture 4rch4ngel %}{% include_relative 4rch4ngel.md %}{% endcapture %}
@@ -31,7 +30,11 @@
       {% capture dotApex %}{% include_relative dotApex.md %}{% endcapture %}
       {% capture dotGhost64Linux %}{% include_relative dotGhost64Linux.md %}{% endcapture %}
       {% capture dotGhost %}{% include_relative dotGhost.md %}{% endcapture %}
- 
+      
+      <a name="readme"></a>
+      {{ readme | markdownify }}
+        <br/>
+        <hr>
       <a name="valorDisco"></a>
       {{ valorDisco | markdownify }}
         <br/>
@@ -66,8 +69,6 @@
         <hr>
       <a name="dotGhost"></a>
       {{ dotGhost | markdownify }}
-        <br/>
-        <hr>
 
         </div>
       </section>
